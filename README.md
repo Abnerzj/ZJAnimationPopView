@@ -3,6 +3,7 @@ ZJAnimationPopView是一个轻量级、无侵入性、可扩展的动画弹框�
 
 ![image](https://github.com/Abnerzj/Resources/blob/master/ZJImages/ZJAnimationPopView/ZJAnimationPopView_01.gif)
 <div align=left>
+<img width="300" height="534" src="https://github.com/Abnerzj/Resources/blob/master/ZJImages/ZJAnimationPopView/ZJAnimationPopView_01.gif"/>
 <img width="300" height="534" src="http://g.recordit.co/ILnIKxMSBN.gif"/>
 <img width="300" height="319" src="http://g.recordit.co/nPCMw7Ewqv.gif"/>
 </div>
