@@ -26,6 +26,8 @@
 @property (nonatomic) ZJAnimationPopStyle animationPopStyle;
 /** 移除时动画弹框样式 */
 @property (nonatomic) ZJAnimationDismissStyle animationDismissStyle;
+/** 显示时背景是否透明，透明度是否为<= 0，默认为NO */
+@property (nonatomic) BOOL isTransparent;
 
 @end
 
@@ -44,9 +46,9 @@
     if (self) {
         
         _isClickBGDismiss = NO;
-        _isTransparent = NO;
-        _popBGAlpha = 0.5f;
         _isObserverOrientationChange = NO;
+        _popBGAlpha = 0.5f;
+        _isTransparent = NO;
         _customView = customView;
         _animationPopStyle = popStyle;
         _animationDismissStyle = dismissStyle;
@@ -81,6 +83,12 @@
     if (_isObserverOrientationChange) {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarOrientationChange:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
     }
+}
+
+- (void)setPopBGAlpha:(CGFloat)popBGAlpha
+{
+    _popBGAlpha = (popBGAlpha <= 0.0f) ? 0.0f : ((popBGAlpha > 1.0) ? 1.0 : popBGAlpha);
+    _isTransparent = (_popBGAlpha == 0.0f);
 }
 
 #pragma mark 点击背景(Click background)

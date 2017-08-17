@@ -115,22 +115,20 @@
     // 2.设置属性，可不设置使用默认值，见注解
     // 2.1 显示时点击背景是否移除弹框
     popView.isClickBGDismiss = ![_customView isKindOfClass:[SlideSelectCardView class]];
-    // 2.2 显示时背景是否透明
-    popView.isTransparent = NO;
-    // 2.3 显示时背景的透明度
+    // 2.2 显示时背景的透明度
     popView.popBGAlpha = 0.5f;
-    // 2.4 显示时是否监听屏幕旋转
+    // 2.3 显示时是否监听屏幕旋转
     popView.isObserverOrientationChange = YES;
-    // 2.5 显示时动画时长
-//    popView.popAnimationDuration = 0.6f;
-    // 2.6 移除时动画时长
-//    popView.dismissAnimationDuration = 0.6f;
+    // 2.4 显示时动画时长
+//    popView.popAnimationDuration = 0.8f;
+    // 2.5 移除时动画时长
+//    popView.dismissAnimationDuration = 0.8f;
 
-    // 2.7 显示完成回调
+    // 2.6 显示完成回调
     popView.popComplete = ^{
         NSLog(@"显示完成");
     };
-    // 2.8 移除完成回调
+    // 2.7 移除完成回调
     popView.dismissComplete = ^{
         NSLog(@"移除完成");
     };
@@ -150,7 +148,7 @@
 //        UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
 //        
 //        UIImageView *imageView = [[UIImageView alloc] initWithFrame:customView.bounds];
-//        imageView.image = [UIImage imageNamed:@"reba.jpeg"];
+//        imageView.image = [UIImage imageNamed:@"personal_info_02"];
 //        [customView addSubview:imageView];
 //        _customView = customView;
         

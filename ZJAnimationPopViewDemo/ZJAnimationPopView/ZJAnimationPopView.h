@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger, ZJAnimationPopStyle) {
  */
 typedef NS_ENUM(NSInteger, ZJAnimationDismissStyle) {
     ZJAnimationDismissStyleNO = 0,               ///< 无动画
-    ZJAnimationDismissStyleScale,                ///< 缩放动画，缩放至0.0
+    ZJAnimationDismissStyleScale,                ///< 缩放动画
     ZJAnimationDismissStyleDropToTop,            ///< 从中间直接掉落到顶部
     ZJAnimationDismissStyleDropToBottom,         ///< 从中间直接掉落到底部
     ZJAnimationDismissStyleDropToLeft,           ///< 从中间直接掉落到左侧
@@ -44,12 +44,10 @@ typedef NS_ENUM(NSInteger, ZJAnimationDismissStyle) {
 
 /** 显示时点击背景是否移除弹框，默认为NO。 */
 @property (nonatomic) BOOL isClickBGDismiss;
-/** 显示时背景是否透明，透明度是否为0，默认为NO */
-@property (nonatomic) BOOL isTransparent;
-/** 显示时背景的透明度，默认0.5 */
-@property (nonatomic) CGFloat popBGAlpha;
 /** 显示时是否监听屏幕旋转，默认为NO */
 @property (nonatomic) BOOL isObserverOrientationChange;
+/** 显示时背景的透明度，取值(0.0~1.0)，默认为0.5 */
+@property (nonatomic) CGFloat popBGAlpha;
 
 /// 动画相关属性参数
 /** 显示时动画时长，>= 0。不设置则使用默认的动画时长 */
