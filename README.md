@@ -29,12 +29,12 @@
 
 # Getting Started【开始使用】
 ## Features【能做什么】
-- 动画样式分为显示时和移除时两种类型，两两组合可以配置出72种(8*9)不同的弹框动画效果。
-- 动画样式可扩展，代码简洁易读，自行添加想要的显示样式和移除样式即可。
-- 自定义控件支持手写和xib。
-- 支持横竖屏和横竖屏切换监听。
-- 支持自定义背景透明度。
-- 支持设置显示时和移除时的动画时长。
+- 动画样式分为**显示时**和**移除时**两种类型，两两组合可以配置出72种**(8*9)**不同的弹框动画效果。
+- 动画样式可扩展，代码**简洁易读**，自行添加想要的显示样式和移除样式即可。
+- 自定义控件支持**手写**和**xib**。
+- 支持**横竖屏**和**横竖屏切换监听**。
+- 支持自定义**背景透明度**。
+- 支持设置显示时和移除时的**动画时长**。
 
 ## Installation【安装】
 
@@ -56,7 +56,7 @@ ZJAnimationPopView.m
 ## Direct Use【直接使用】
 ```objc
 // 1.初始化
-ZJAnimationPopView *popView = [[ZJAnimationPopView alloc] initWithCustomView:customView popStyle:ZJAnimationPopStyleScale dismissStyle:ZJAnimationDismissStyleScale];
+ZJAnimationPopView *popView = [[ZJAnimationPopView alloc] initWithCustomView:[[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)] popStyle:ZJAnimationPopStyleScale dismissStyle:ZJAnimationDismissStyleScale];
 // 2.显示弹框
 [popView pop];
 ```
