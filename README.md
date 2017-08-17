@@ -2,8 +2,9 @@
 
 [![Platform](https://img.shields.io/badge/platform-iOS-red.svg)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-OC-yellow.svg?style=flat )](https://en.wikipedia.org/wiki/Objective-C) 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://mit-license.org) 
-[![CocoaPods Version](https://img.shields.io/badge/pod-v1.0.0-brightgreen.svg)]
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://mit-license.org)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/ZJAnimationPopView.svg)](https://img.shields.io/cocoapods/v/ZJAnimationPopView.svg)
+[![CocoaPods Version](https://img.shields.io/badge/pod-v1.0.0-brightgreen.svg)](https://img.shields.io/cocoapods/v/ZJAnimationPopView.svg)
 [![Weibo](https://img.shields.io/badge/weibo-@Abnerzj-blue.svg?style=flat)](http://weibo.com/ioszj)
 
 
