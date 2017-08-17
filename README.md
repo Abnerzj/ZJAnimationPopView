@@ -31,11 +31,13 @@
 
 ## Getting Started【开始使用】
 ### Features【能做什么】
+---
 ZJAnimationPopView是一个快速便捷展开或折叠内容详情的控件。
 - 内容详情支持自定义属性文字，甚至只需传入一段文字内容。
 - 支持默认折叠的行数和展开按钮位置等功能。
 
 ### Installation【安装】
+---
 
 #### From CocoaPods【使用CocoaPods】
 
