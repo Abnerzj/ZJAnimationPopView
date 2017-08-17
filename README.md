@@ -4,7 +4,8 @@
 [![Language](http://img.shields.io/badge/language-OC-yellow.svg?style=flat )](https://en.wikipedia.org/wiki/Objective-C) 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://mit-license.org)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/ZJAnimationPopView.svg)](https://img.shields.io/cocoapods/v/ZJAnimationPopView.svg)
-[![Weibo](https://img.shields.io/badge/weibo-@Abnerzj-blue.svg?style=flat)](http://weibo.com/ioszj)
+[![Weibo](https://img.shields.io/badge/微博-@Abnerzj-blue.svg?style=flat)](http://weibo.com/ioszj)
+[![简书](https://img.shields.io/badge/简书-@Abnerzj-red.svg?style=flat)](http://jianshu.com/u/f00ad5c62f05)
 
 
 - A fast, convenient view to show animation pop view, it support 72 kinds of animation pop effect.【一个快速便捷、无侵入、可扩展的动画弹框库，两句代码即可实现想要的动画弹框。支持手写和xib，支持横竖屏。可以配置出72种不同的弹框动画效果。】
