@@ -29,27 +29,21 @@
 
 ---
 
-## Contents
-* [Getting Started 【开始使用】](#Getting_Started)
-* [Features 【能做什么】](#Features)
-* [Installation 【安装】](#Installation)
-* [Examples 【示例】](#Examples)
-
-# Getting Started【开始使用】
-## Features【能做什么】
-ZJUnFoldView是一个快速便捷展开或折叠内容详情的控件。
+## Getting Started【开始使用】
+### Features【能做什么】
+ZJAnimationPopView是一个快速便捷展开或折叠内容详情的控件。
 - 内容详情支持自定义属性文字，甚至只需传入一段文字内容。
 - 支持默认折叠的行数和展开按钮位置等功能。
 
-## Installation【安装】
+### Installation【安装】
 
-### From CocoaPods【使用CocoaPods】
+#### From CocoaPods【使用CocoaPods】
 
 ```ruby
 pod 'ZJAnimationPopView'
 ```
 
-### Manually【手动导入】
+#### Manually【手动导入】
 - Drag all source files under floder `ZJAnimationPopView` to your project.【将`ZJAnimationPopView`文件夹中的所有源代码拽入项目中】
 - Import the main header file：`#import "ZJAnimationPopView.h"`【导入主头文件：`#import "ZJAnimationPopView.h"`】
 
@@ -57,7 +51,7 @@ pod 'ZJAnimationPopView'
 ZJAnimationPopView.h                      
 ZJAnimationPopView.m
 ```
-# Examples【示例】
+## Examples【示例】
 
 ## 期待
 * 如果在使用过程中遇到BUG，请Issues我，谢谢
