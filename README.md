@@ -9,7 +9,7 @@
 
 
 - A fast, convenient view to show animation pop view, it support 72 kinds of animation pop effect.【一个快速便捷、无侵入、可扩展的动画弹框库，两句代码即可实现想要的动画弹框。支持手写和xib，支持横竖屏。可以配置出72种不同的弹框动画效果。】
-- PS:Recorded and found that the resulting loss of animation is not consistent, it is recommended to download and install Demo view.【录制后发现失帧造成动画效果不连贯，建议下载安装Demo查看。】
+- PS:Recorded and found that the resulting loss of animation is not consistent, it is recommended to download and install Demo view.【录制后发现失帧造成动画效果不连贯，手机上浏览横竖屏切换的Gif图也被拉伸了，建议下载安装Demo查看。】
 ---
 
 <div align=left>
