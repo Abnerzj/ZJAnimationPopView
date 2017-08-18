@@ -99,5 +99,5 @@ NSLog(@"移除完成");
 
 ## 期待
 * 如果在使用过程中遇到BUG，请Issues我，谢谢。
-* 这个库支持扩展动画样式，如果你想为[ZJAnimationPopView](https://github.com/Abnerzj/ZJAnimationPopView)输出代码，请拼命Pull Requests我，让更多的老铁们都能使用到你那吊炸天的动画效果。
+* 这个库支持扩展动画样式，如果你想为ZJAnimationPopView输出代码，请拼命Pull Requests我，让更多的老铁们都能使用到你那吊炸天的动画效果。
 * 联系我😯 ：[简书](http://www.jianshu.com/u/f00ad5c62f05)   [微博](http://weibo.com/ioszj)
