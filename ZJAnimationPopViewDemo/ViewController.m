@@ -73,7 +73,7 @@
 {
     UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 120.0f)];
     UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 0, bgView.frame.size.width - 30, 80.0f)];
-    headerLabel.text = @"ZJAnimationPopView是一个轻量级、无侵入性、可扩展的动画弹框库，支持手写和xib控件，支持横竖屏。动画样式分为显示时和移除时两种类型，两两组合可以配置出72种(8*9)不同的弹框动画效果。";
+    headerLabel.text = @"ZJAnimationPopView一个快速便捷、无侵入、可扩展的动画弹框库，两句代码即可实现想要的动画弹框。支持手写和xib，支持横竖屏。动画样式分为显示时和移除时两种类型，两两组合可以配置出72种(8*9)不同的弹框动画效果。";
     headerLabel.textColor = [UIColor darkTextColor];
     headerLabel.numberOfLines = 0;
     headerLabel.font = [UIFont systemFontOfSize:13.0f];
