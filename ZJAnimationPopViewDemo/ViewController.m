@@ -167,25 +167,28 @@
 #pragma mark 处理自定义视图操作事件
 - (void)handleCustomActionEnvent:(ZJAnimationPopView *)popView
 {
+    // 在监听自定义视图的block操作事件时，要使用弱对象来避免循环引用
+    __weak typeof(popView) weakPopView = popView;
+    __weak typeof(_segCtrl) weakSegCtrl = _segCtrl;
     if ([_customView isKindOfClass:[SlideSelectCardView class]]) {
         SlideSelectCardView *cardView = _customView;
         cardView.selectActionBlock = ^(NSUInteger currentPage) {
             _personalInfoType = (PersonalInfoType)(currentPage + 1);
             NSString *segTitle = (_personalInfoType == PersonalInfoTypeDouYu) ? @"斗鱼" : ((_personalInfoType == PersonalInfoTypeYY) ? @"YY" : @"映客");
-            [_segCtrl setTitle:[NSString stringWithFormat:@"%@个人资料卡片", segTitle] forSegmentAtIndex:1];
-            _segCtrl.apportionsSegmentWidthsByContent = YES;
+            [weakSegCtrl setTitle:[NSString stringWithFormat:@"%@个人资料卡片", segTitle] forSegmentAtIndex:1];
+            weakSegCtrl.apportionsSegmentWidthsByContent = YES;
             
-            [popView dismiss];
+            [weakPopView dismiss];
         };
     } else if ([_customView isKindOfClass:[PersonalInfoPopView class]]) {
         PersonalInfoPopView *infoPopView = _customView;
         infoPopView.closeActionBlock = ^{
-            [popView dismiss];
+            [weakPopView dismiss];
         };
     } else if ([_customView isKindOfClass:[ZJAlertView class]]) {
         ZJAlertView *alertView = _customView;
         alertView.canceSureActionBlock = ^(BOOL isSure) {
-            [popView dismiss];
+            [weakPopView dismiss];
             NSLog(@"点击了%@", isSure ? @"确定" : @"取消");
         };
     }

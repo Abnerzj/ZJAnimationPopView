@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZJAnimationPopViewDemo/ZJAnimationPopView/ZJAnimationPopView.m"
-            timestampString = "524366842.317486"
+            timestampString = "525624751.329545"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"
             endingLineNumber = "61"
-            landmarkName = "-tapBGLayer:"
+            landmarkName = "-initWithCustomView:popStyle:dismissStyle:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZJAnimationPopViewDemo/ZJAnimationPopView/ZJAnimationPopView.m"
-            timestampString = "524366842.317486"
+            timestampString = "525624751.329545"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "131"
             endingLineNumber = "131"
-            landmarkName = "-dismissWithAnimationPopStyle:"
+            landmarkName = "-pop"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +42,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZJAnimationPopViewDemo/ZJAnimationPopView/ZJAnimationPopView.m"
-            timestampString = "524366842.317486"
+            timestampString = "525624751.329545"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "175"
             endingLineNumber = "175"
-            landmarkName = "-hanlePopAnimation:duration:"
+            landmarkName = "-dismiss"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZJAnimationPopViewDemo/ViewController.m"
+            timestampString = "525625207.154186"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "-segCtrlAction:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
