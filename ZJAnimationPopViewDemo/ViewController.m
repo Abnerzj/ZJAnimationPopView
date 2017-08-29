@@ -216,7 +216,6 @@
     
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     _tableView.separatorInset = UIEdgeInsetsZero;
-    _tableView.rowHeight = 60.0f;
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];

@@ -165,14 +165,15 @@
         [self hanleDismissAnimationWithDuration:duration];
     }
     
+    if (ws.isObserverOrientationChange) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+    }
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [ws removeFromSuperview];
         if (ws.dismissComplete) {
             ws.dismissComplete();
         }
-        if (ws.isObserverOrientationChange) {
-            [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
-        }
+        [ws removeFromSuperview];
     });
 }
 
