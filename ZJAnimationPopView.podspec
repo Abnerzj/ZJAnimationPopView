@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "ZJAnimationPopView"
-s.version      = "1.0.0"
+s.version      = "1.0.1"
 s.summary      = "A fast, convenient view to show animation pop view."
 s.description  = <<-DESC
 A fast, convenient view to show animation pop view, it support 72 kinds of animation pop effect.
