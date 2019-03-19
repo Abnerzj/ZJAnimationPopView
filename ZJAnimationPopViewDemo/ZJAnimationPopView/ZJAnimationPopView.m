@@ -175,6 +175,9 @@
         }
         [ws removeFromSuperview];
     });
+    
+    // Immediately respond to other places with animated dismiss
+    self.frame = CGRectZero;
 }
 
 - (void)hanlePopAnimationWithDuration:(NSTimeInterval)duration
