@@ -55,9 +55,9 @@ typedef NS_ENUM(NSInteger, ZJAnimationDismissStyle) {
 /** 隐藏时动画时长，>= 0。不设置则使用默认的动画时长 */
 @property (nonatomic) CGFloat dismissAnimationDuration;
 /** 显示完成回调 */
-@property (nullable, nonatomic, copy) void(^popComplete)();
+@property (nullable, nonatomic, copy) void(^popComplete)(void);
 /** 移除完成回调 */
-@property (nullable, nonatomic, copy) void(^dismissComplete)();
+@property (nullable, nonatomic, copy) void(^dismissComplete)(void);
 
 /**
  通过自定义视图来构造弹框视图
