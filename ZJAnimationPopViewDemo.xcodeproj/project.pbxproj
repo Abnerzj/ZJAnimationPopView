@@ -15,7 +15,6 @@
 		60AA7E061F3EC4A4008755F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AA7E041F3EC4A4008755F7 /* LaunchScreen.storyboard */; };
 		60AA7E111F3EC4A4008755F7 /* ZJAnimationPopViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AA7E101F3EC4A4008755F7 /* ZJAnimationPopViewDemoTests.m */; };
 		60AA7E1C1F3EC4A4008755F7 /* ZJAnimationPopViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AA7E1B1F3EC4A4008755F7 /* ZJAnimationPopViewDemoUITests.m */; };
-		60AA7E2C1F3EC4D5008755F7 /* ZJAnimationPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AA7E2B1F3EC4D5008755F7 /* ZJAnimationPopView.m */; };
 		9A13EA521F43F13A00F8F4EE /* personal_info_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A13EA4F1F43F13A00F8F4EE /* personal_info_01.png */; };
 		9A13EA531F43F13A00F8F4EE /* personal_info_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A13EA501F43F13A00F8F4EE /* personal_info_02.png */; };
 		9A13EA541F43F13A00F8F4EE /* personal_info_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A13EA511F43F13A00F8F4EE /* personal_info_03.png */; };
@@ -27,6 +26,7 @@
 		9A13EA721F44479200F8F4EE /* ZJAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A13EA691F44479200F8F4EE /* ZJAlertView.xib */; };
 		9A13EA731F44479200F8F4EE /* ZJXibFoctory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A13EA6B1F44479200F8F4EE /* ZJXibFoctory.m */; };
 		9A13EA741F44479200F8F4EE /* ZJXibFoctory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A13EA6C1F44479200F8F4EE /* ZJXibFoctory.xib */; };
+		9ABC75962240FCEA00730C94 /* ZJAnimationPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC75952240FCEA00730C94 /* ZJAnimationPopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,6 @@
 		60AA7E171F3EC4A4008755F7 /* ZJAnimationPopViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJAnimationPopViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AA7E1B1F3EC4A4008755F7 /* ZJAnimationPopViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJAnimationPopViewDemoUITests.m; sourceTree = "<group>"; };
 		60AA7E1D1F3EC4A4008755F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60AA7E2A1F3EC4D5008755F7 /* ZJAnimationPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAnimationPopView.h; sourceTree = "<group>"; };
-		60AA7E2B1F3EC4D5008755F7 /* ZJAnimationPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJAnimationPopView.m; sourceTree = "<group>"; };
 		9A13EA4F1F43F13A00F8F4EE /* personal_info_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal_info_01.png; sourceTree = "<group>"; };
 		9A13EA501F43F13A00F8F4EE /* personal_info_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal_info_02.png; sourceTree = "<group>"; };
 		9A13EA511F43F13A00F8F4EE /* personal_info_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal_info_03.png; sourceTree = "<group>"; };
@@ -80,6 +78,8 @@
 		9A13EA6A1F44479200F8F4EE /* ZJXibFoctory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJXibFoctory.h; sourceTree = "<group>"; };
 		9A13EA6B1F44479200F8F4EE /* ZJXibFoctory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJXibFoctory.m; sourceTree = "<group>"; };
 		9A13EA6C1F44479200F8F4EE /* ZJXibFoctory.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJXibFoctory.xib; sourceTree = "<group>"; };
+		9ABC75942240FCEA00730C94 /* ZJAnimationPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAnimationPopView.h; sourceTree = "<group>"; };
+		9ABC75952240FCEA00730C94 /* ZJAnimationPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJAnimationPopView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 		60AA7DF51F3EC4A4008755F7 /* ZJAnimationPopViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				60AA7E291F3EC4B8008755F7 /* ZJAnimationPopView */,
+				9ABC75932240FCEA00730C94 /* ZJAnimationPopView */,
 				9A13EA601F44479100F8F4EE /* DemoView */,
 				9A1D78181F42CEAD00BE6DDA /* Resource */,
 				60AA7DF91F3EC4A4008755F7 /* AppDelegate.h */,
@@ -172,15 +172,6 @@
 			path = ZJAnimationPopViewDemoUITests;
 			sourceTree = "<group>";
 		};
-		60AA7E291F3EC4B8008755F7 /* ZJAnimationPopView */ = {
-			isa = PBXGroup;
-			children = (
-				60AA7E2A1F3EC4D5008755F7 /* ZJAnimationPopView.h */,
-				60AA7E2B1F3EC4D5008755F7 /* ZJAnimationPopView.m */,
-			);
-			path = ZJAnimationPopView;
-			sourceTree = "<group>";
-		};
 		9A13EA601F44479100F8F4EE /* DemoView */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +200,15 @@
 			);
 			path = Resource;
 			sourceTree = "<group>";
+		};
+		9ABC75932240FCEA00730C94 /* ZJAnimationPopView */ = {
+			isa = PBXGroup;
+			children = (
+				9ABC75942240FCEA00730C94 /* ZJAnimationPopView.h */,
+				9ABC75952240FCEA00730C94 /* ZJAnimationPopView.m */,
+			);
+			path = ZJAnimationPopView;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -352,11 +352,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				60AA7DFE1F3EC4A4008755F7 /* ViewController.m in Sources */,
-				60AA7E2C1F3EC4D5008755F7 /* ZJAnimationPopView.m in Sources */,
 				9A13EA6F1F44479200F8F4EE /* SlideSelectCardView.m in Sources */,
 				9A13EA711F44479200F8F4EE /* ZJAlertView.m in Sources */,
 				9A13EA6D1F44479200F8F4EE /* PersonalInfoPopView.m in Sources */,
 				60AA7DFB1F3EC4A4008755F7 /* AppDelegate.m in Sources */,
+				9ABC75962240FCEA00730C94 /* ZJAnimationPopView.m in Sources */,
 				9A13EA731F44479200F8F4EE /* ZJXibFoctory.m in Sources */,
 				60AA7DF81F3EC4A4008755F7 /* main.m in Sources */,
 			);
