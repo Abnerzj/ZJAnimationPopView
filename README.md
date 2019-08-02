@@ -20,6 +20,7 @@
 <div align=left>
 <img width="284.5" height="505" src="https://github.com/Abnerzj/Resources/blob/master/ZJImages/ZJAnimationPopView/ZJAnimationPopView_04.gif"/>
 <img width="285" height="506.5" src="https://github.com/Abnerzj/Resources/blob/master/ZJImages/ZJAnimationPopView/ZJAnimationPopView_05.gif"/>
+<img width="285" height="506.5" src="https://github.com/Abnerzj/Resources/blob/master/ZJImages/ZJAnimationPopView/ZJAnimationPopView_07.gif"/>
 </div>
 <div align=left>
 <img width="696" height="494" src="https://github.com/Abnerzj/Resources/blob/master/ZJImages/ZJAnimationPopView/ZJAnimationPopView_06.gif"/>
