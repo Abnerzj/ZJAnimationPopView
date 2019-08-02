@@ -23,6 +23,7 @@ typedef NS_ENUM(NSInteger, ZJAnimationPopStyle) {
     ZJAnimationPopStyleShakeFromRight,       ///< 从右侧往左到中间晃动动画
     ZJAnimationPopStyleCardDropFromLeft,     ///< 卡片从顶部左侧开始掉落动画
     ZJAnimationPopStyleCardDropFromRight,    ///< 卡片从顶部右侧开始掉落动画
+    ZJAnimationPopStyleLineFromBottom,       ///< 平滑线性从底部推出来动画
 };
 
 /**
@@ -38,6 +39,7 @@ typedef NS_ENUM(NSInteger, ZJAnimationDismissStyle) {
     ZJAnimationDismissStyleCardDropToLeft,       ///< 卡片从中间往左侧掉落
     ZJAnimationDismissStyleCardDropToRight,      ///< 卡片从中间往右侧掉落
     ZJAnimationDismissStyleCardDropToTop,        ///< 卡片从中间往顶部移动消失
+    ZJAnimationDismissStyleLineToBottom,         ///< 平滑线性掉落到底部动画
 };
 
 @interface ZJAnimationPopView : UIView

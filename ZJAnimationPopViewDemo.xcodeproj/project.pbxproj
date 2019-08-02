@@ -26,6 +26,8 @@
 		9A13EA721F44479200F8F4EE /* ZJAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A13EA691F44479200F8F4EE /* ZJAlertView.xib */; };
 		9A13EA731F44479200F8F4EE /* ZJXibFoctory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A13EA6B1F44479200F8F4EE /* ZJXibFoctory.m */; };
 		9A13EA741F44479200F8F4EE /* ZJXibFoctory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A13EA6C1F44479200F8F4EE /* ZJXibFoctory.xib */; };
+		9A1578CB22F429F60054AB96 /* LineFromBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1578CA22F429F60054AB96 /* LineFromBottomView.m */; };
+		9A1578CD22F42A040054AB96 /* LineFromBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1578CC22F42A040054AB96 /* LineFromBottomView.xib */; };
 		9ABC75962240FCEA00730C94 /* ZJAnimationPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC75952240FCEA00730C94 /* ZJAnimationPopView.m */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,9 @@
 		9A13EA6A1F44479200F8F4EE /* ZJXibFoctory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJXibFoctory.h; sourceTree = "<group>"; };
 		9A13EA6B1F44479200F8F4EE /* ZJXibFoctory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJXibFoctory.m; sourceTree = "<group>"; };
 		9A13EA6C1F44479200F8F4EE /* ZJXibFoctory.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJXibFoctory.xib; sourceTree = "<group>"; };
+		9A1578C922F429F60054AB96 /* LineFromBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineFromBottomView.h; sourceTree = "<group>"; };
+		9A1578CA22F429F60054AB96 /* LineFromBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineFromBottomView.m; sourceTree = "<group>"; };
+		9A1578CC22F42A040054AB96 /* LineFromBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineFromBottomView.xib; sourceTree = "<group>"; };
 		9ABC75942240FCEA00730C94 /* ZJAnimationPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAnimationPopView.h; sourceTree = "<group>"; };
 		9ABC75952240FCEA00730C94 /* ZJAnimationPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJAnimationPopView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +186,9 @@
 				9A13EA641F44479100F8F4EE /* SlideSelectCardView.h */,
 				9A13EA651F44479100F8F4EE /* SlideSelectCardView.m */,
 				9A13EA661F44479100F8F4EE /* SlideSelectCardView.xib */,
+				9A1578C922F429F60054AB96 /* LineFromBottomView.h */,
+				9A1578CA22F429F60054AB96 /* LineFromBottomView.m */,
+				9A1578CC22F42A040054AB96 /* LineFromBottomView.xib */,
 				9A13EA671F44479100F8F4EE /* ZJAlertView.h */,
 				9A13EA681F44479200F8F4EE /* ZJAlertView.m */,
 				9A13EA691F44479200F8F4EE /* ZJAlertView.xib */,
@@ -325,6 +333,7 @@
 				9A13EA541F43F13A00F8F4EE /* personal_info_03.png in Resources */,
 				60AA7E011F3EC4A4008755F7 /* Main.storyboard in Resources */,
 				9A13EA721F44479200F8F4EE /* ZJAlertView.xib in Resources */,
+				9A1578CD22F42A040054AB96 /* LineFromBottomView.xib in Resources */,
 				9A13EA701F44479200F8F4EE /* SlideSelectCardView.xib in Resources */,
 				9A13EA531F43F13A00F8F4EE /* personal_info_02.png in Resources */,
 			);
@@ -355,6 +364,7 @@
 				9A13EA6F1F44479200F8F4EE /* SlideSelectCardView.m in Sources */,
 				9A13EA711F44479200F8F4EE /* ZJAlertView.m in Sources */,
 				9A13EA6D1F44479200F8F4EE /* PersonalInfoPopView.m in Sources */,
+				9A1578CB22F429F60054AB96 /* LineFromBottomView.m in Sources */,
 				60AA7DFB1F3EC4A4008755F7 /* AppDelegate.m in Sources */,
 				9ABC75962240FCEA00730C94 /* ZJAnimationPopView.m in Sources */,
 				9A13EA731F44479200F8F4EE /* ZJXibFoctory.m in Sources */,

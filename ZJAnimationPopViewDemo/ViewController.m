@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import "ZJAnimationPopView.h"
 #import "PersonalInfoPopView.h"
-#import "ZJAlertView.h"
 #import "SlideSelectCardView.h"
+#import "LineFromBottomView.h"
+#import "ZJAlertView.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 {
@@ -106,8 +107,19 @@
 #pragma mark 显示弹框
 - (void)showPopAnimationWithAnimationStyle:(NSInteger)style
 {
-    ZJAnimationPopStyle popStyle = (style == 8) ? ZJAnimationPopStyleCardDropFromLeft : (ZJAnimationPopStyle)style;
+    ZJAnimationPopStyle popStyle = (ZJAnimationPopStyle)style;
     ZJAnimationDismissStyle dismissStyle = (ZJAnimationDismissStyle)style;
+    if (style == 8) {
+        popStyle = ZJAnimationPopStyleCardDropFromLeft;
+        dismissStyle = ZJAnimationDismissStyleCardDropToTop;
+    } else if (style == 9) {
+        popStyle = ZJAnimationPopStyleLineFromBottom;
+        _customView = [LineFromBottomView xib];
+    }
+    if ([_customView isKindOfClass:[LineFromBottomView class]] && style != 9) {
+        _customView = nil;
+        [self segCtrlAction:_segCtrl];
+    }
     
     // 1.初始化
     ZJAnimationPopView *popView = [[ZJAnimationPopView alloc] initWithCustomView:_customView popStyle:popStyle dismissStyle:dismissStyle];
@@ -185,6 +197,11 @@
         infoPopView.closeActionBlock = ^{
             [weakPopView dismiss];
         };
+    } else if ([_customView isKindOfClass:[LineFromBottomView class]]) {
+        LineFromBottomView *lineFromBottomView = _customView;
+        lineFromBottomView.doneActionBlock = ^{
+            [weakPopView dismiss];
+        };
     } else if ([_customView isKindOfClass:[ZJAlertView class]]) {
         ZJAlertView *alertView = _customView;
         alertView.canceSureActionBlock = ^(BOOL isSure) {
@@ -211,6 +228,7 @@
                   @{@"title" : @"从底部掉落晃动动画", @"style" : @3},
                   @{@"title" : @"从左侧掉落晃动动画", @"style" : @4},
                   @{@"title" : @"从右侧掉落晃动动画", @"style" : @5},
+                  @{@"title" : @"平滑线性从底部推出动画", @"style" : @9},
                   @{@"title" : @"缩放动画", @"style" : @1},
                   @{@"title" : @"无动画", @"style" : @0}];
     

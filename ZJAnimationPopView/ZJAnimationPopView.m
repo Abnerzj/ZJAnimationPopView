@@ -239,6 +239,19 @@
             }];
         }
             break;
+        case ZJAnimationPopStyleLineFromBottom:
+        {
+            CGPoint startPosition = self.contentView.layer.position;
+            CGFloat customViewY = CGRectGetMaxY(self.frame) - self.customView.frame.size.height;
+            CGFloat customViewCenterY = customViewY + self.customView.frame.size.height * 0.5;
+            CGPoint endPosition = CGPointMake(startPosition.x, customViewCenterY);
+            
+            self.contentView.layer.position = CGPointMake(startPosition.x, CGRectGetMaxY(self.frame) + startPosition.y);
+            [UIView animateWithDuration:duration animations:^{
+                ws.contentView.layer.position = endPosition;
+            }];
+        }
+            break;
             
         default:
             break;
@@ -308,6 +321,15 @@
             }];
         }
             break;
+        case ZJAnimationDismissStyleLineToBottom:
+        {
+            CGPoint startPosition = self.contentView.layer.position;
+            CGPoint endPosition = CGPointMake(startPosition.x, CGRectGetMaxY(self.frame) + startPosition.y);
+            [UIView animateWithDuration:duration animations:^{
+                ws.contentView.layer.position = endPosition;
+            }];
+        }
+            break;
         default:
             break;
     }
@@ -318,7 +340,8 @@
     NSTimeInterval defaultDuration = 0.0f;
     if (animationPopStyle == ZJAnimationPopStyleNO) {
         defaultDuration = 0.2f;
-    } else if (animationPopStyle == ZJAnimationPopStyleScale) {
+    } else if (animationPopStyle == ZJAnimationPopStyleScale ||
+               animationPopStyle == ZJAnimationPopStyleLineFromBottom) {
         defaultDuration = 0.3f;
     } else if (animationPopStyle == ZJAnimationPopStyleShakeFromTop ||
                animationPopStyle == ZJAnimationPopStyleShakeFromBottom ||
@@ -334,10 +357,11 @@
 - (NSTimeInterval)getDismissDefaultDuration:(ZJAnimationDismissStyle)animationDismissStyle
 {
     NSTimeInterval defaultDuration = 0.0f;
-    if (animationDismissStyle == ZJAnimationDismissStyleNO) {
+    if (animationDismissStyle == ZJAnimationDismissStyleNO ||
+        animationDismissStyle == ZJAnimationDismissStyleScale) {
         defaultDuration = 0.2f;
-    } else if (animationDismissStyle == ZJAnimationDismissStyleScale) {
-        defaultDuration = 0.2f;
+    } else if (animationDismissStyle == ZJAnimationDismissStyleLineToBottom) {
+        defaultDuration = 0.3f;
     } else if (animationDismissStyle == ZJAnimationDismissStyleDropToTop ||
                animationDismissStyle == ZJAnimationDismissStyleDropToBottom ||
                animationDismissStyle == ZJAnimationDismissStyleDropToLeft ||
