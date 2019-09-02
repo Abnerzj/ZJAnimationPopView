@@ -70,7 +70,13 @@
         tap.delegate = self;
         [_contentView addGestureRecognizer:tap];
         
-        customView.center = _contentView.center;
+        if (_animationPopStyle == ZJAnimationPopStyleLineFromBottom) {
+            CGFloat customViewY = CGRectGetMaxY(self.frame) - self.customView.frame.size.height; // 812 - 250
+            CGFloat customViewCenterY = customViewY + self.customView.frame.size.height * 0.5;
+            customView.center = CGPointMake(_contentView.center.x, customViewCenterY);
+        } else {
+            customView.center = _contentView.center;
+        }
         [_contentView addSubview:customView];
     }
     return self;
@@ -242,13 +248,9 @@
         case ZJAnimationPopStyleLineFromBottom:
         {
             CGPoint startPosition = self.contentView.layer.position;
-            CGFloat customViewY = CGRectGetMaxY(self.frame) - self.customView.frame.size.height;
-            CGFloat customViewCenterY = customViewY + self.customView.frame.size.height * 0.5;
-            CGPoint endPosition = CGPointMake(startPosition.x, customViewCenterY);
-            
             self.contentView.layer.position = CGPointMake(startPosition.x, CGRectGetMaxY(self.frame) + startPosition.y);
             [UIView animateWithDuration:duration animations:^{
-                ws.contentView.layer.position = endPosition;
+                ws.contentView.layer.position = startPosition;
             }];
         }
             break;
