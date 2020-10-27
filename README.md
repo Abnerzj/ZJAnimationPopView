@@ -87,14 +87,18 @@ popView.dismissAnimationDuration = 0.8f;
 
 // 3.6 显示完成回调
 popView.popComplete = ^{
-NSLog(@"显示完成");
+    NSLog(@"显示完成");
 };
 // 3.7 移除完成回调
 popView.dismissComplete = ^{
-NSLog(@"移除完成");
+    NSLog(@"移除完成");
 };
 
 // 4.pop view【显示弹框】
+// 4.1 弹框的父视图，建议设置为控制器的根视图，不设置则用keyWindow
+popView.superView = self.view;
+
+// 显示
 [popView pop];
 ```
 
