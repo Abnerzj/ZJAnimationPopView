@@ -149,6 +149,10 @@
     [self handleCustomActionEnvent:popView];
     
     // 4.显示弹框
+    // 4.1 弹框的父视图，建议设置为控制器的根视图，不设置则用keyWindow
+//    popView.superView = self.view;
+    
+    // 显示
     [popView pop];
 }
 

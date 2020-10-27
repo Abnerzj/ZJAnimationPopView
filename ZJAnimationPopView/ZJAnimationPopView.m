@@ -115,7 +115,12 @@
 
 - (void)pop
 {
-    [[UIApplication sharedApplication].keyWindow addSubview:self];
+    if (self.superView) {
+        [self.superView addSubview:self];
+        [self.superview bringSubviewToFront:self];
+    } else {
+        [[UIApplication sharedApplication].keyWindow addSubview:self];
+    }
     
     __weak typeof(self) ws = self;
     NSTimeInterval defaultDuration = [self getPopDefaultDuration:self.animationPopStyle];

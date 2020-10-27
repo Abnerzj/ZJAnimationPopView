@@ -44,6 +44,8 @@ typedef NS_ENUM(NSInteger, ZJAnimationDismissStyle) {
 
 @interface ZJAnimationPopView : UIView
 
+/** 弹框的父视图，建议设置为控制器的根视图，不设置则用keyWindow */
+@property (nullable, nonatomic, strong) UIView *superView;
 /** 显示时点击背景是否移除弹框，默认为NO。 */
 @property (nonatomic) BOOL isClickBGDismiss;
 /** 显示时是否监听屏幕旋转，默认为NO */

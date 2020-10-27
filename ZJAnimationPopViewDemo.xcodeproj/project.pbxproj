@@ -285,7 +285,6 @@
 				TargetAttributes = {
 					60AA7DF21F3EC4A4008755F7 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = AJ9F2AA42Q;
 						ProvisioningStyle = Automatic;
 					};
 					60AA7E0B1F3EC4A4008755F7 = {
@@ -305,6 +304,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -519,11 +519,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AJ9F2AA42Q;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ZJAnimationPopViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = abner.ZJAnimationPopViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = xxxx.ZJAnimationPopViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -532,11 +532,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AJ9F2AA42Q;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ZJAnimationPopViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = abner.ZJAnimationPopViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = xxxx.ZJAnimationPopViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
